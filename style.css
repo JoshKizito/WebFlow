@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #ec6d87;
+  --text-color: rgb(255, 255, 255);
+  --btn-color: #000000;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: fixed;
+  /* position: relative; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  padding: 0 5%;
+  /* background-color: var(--bg-color); */
+  background: transparent;
+  z-index: 100;
+}
+
+.header_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo__header {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.navbar .header_link {
+  font-size: 1.1em;
+  font-weight: 200;
+  margin-left: 1.4em;
+  color: var(--text-color);
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.header_link:hover {
+  background-color: var(--btn-color);
+}
+
+/* --end header-- */
+
+.container {
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.About {
+  /* position: relative; */
+  background: linear-gradient(
+      to top,
+      rgba(214, 47, 47, 0.42),
+      rgba(0, 0, 0, 0.221)
+    ),
+    url("/images/img-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  color: var(--btn-color);
+}
+
+.about_container {
+  width: 100%;
+  height: 35em;
+}
+
+.about_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+  /* padding: 0 8%; */
+}
+
+.about_text h2 {
+  display: flex;
+  font-size: 2.3em;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  font-weight: 900;
+  color: var(--bg-color);
+  margin-bottom: 1em;
+}
+
+.about_content {
+  max-width: 35%;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 2em;
+}
+
+.btn_about {
+  width: 11em;
+  height: 2.6em;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  border: 1.5px solid var(--text-color);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.btn_about:hover {
+  background-color: var(--text-color);
+  color: var(--btn-color);
+}
+
+/* Start Cards Outdoor top*/
+
+.outdoor_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.outdoor__child__top {
+  display: flex;
+  width: 100%;
+  height: 12em;
+}
+
+.outdoor_child_title_left {
+  display: flex;
+  flex-direction: column;
+  width: 95em;
+  height: 100%;
+  justify-content: center;
+}
+
+.outdoor_child_title_left p {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.outdoor_child_title_left h3 {
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.outdoor_child_title_right {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.outdoor_child_title_right p {
+  font-weight: 200;
+  line-height: 23px;
+}
+
+/* end Cards Outdoor top*/
+
+/* Start Cards Outdoor bottom*/
+
+.outdoor_child_bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 25em;
+  margin-bottom: 10em;
+  background-color: rgb(105, 107, 227);
+}
+
+.outdoor_cards {
+  display: flex;
+  flex-direction: column;
+  width: 21em;
+  height: 25em;
+  border-radius: 10px;
+  background-color: #ec6d87;
+}
+
+.outdoor_card_img img {
+  border-radius: 10px;
+}
+
+.outdoor_card_img img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+  margin-bottom: 1.2em;
+  /* background: linear-gradient(
+      to top,
+      rgba(214, 47, 47, 0.42),
+      rgba(0, 0, 0, 0.221)
+    ),
+    url("/images/img-hero.jpg"); */
+}
+
+.outdoor_card_title {
+  /* position: relative; */
+  width: 100%;
+  height: 3.4em;
+  /* background-color: #ec6d87; */
+}
+/* end Cards Outdoor end*/
